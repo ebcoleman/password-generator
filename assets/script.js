@@ -10,6 +10,17 @@ function generatePassword() {
   
   var passwordLength = prompt("Select password length (minimum: 8; maximum: 128)");
 
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("ALERT: Password must be 8-128 characters!");
+    return "";
+  }
+// use confirm instead of prompt; it gives a yes/no option instead of a text box
+  var includeUppercase = confirm("Include uppercase letters?");
+  var includeLowercase = confirm("Include lowercase letters?");
+  var includeNumbers = confirm("Include numbers?");
+  var includeSymbols = confirm("Include symbols?");
+
+
 // prior to putting in the return statement this function was undefined so when you clicked the button it read "undefined" in the generator
 // once code  
 return "password will go here"
