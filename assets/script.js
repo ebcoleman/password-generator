@@ -23,10 +23,14 @@ function generatePassword() {
   var includeNumbers = confirm("Include numbers?");
   var includeSymbols = confirm("Include symbols?");
 
+  var createdPassword = 
+  for (var i = 0; i < passwordLength; i++) {
+    
+  }
 
 // prior to putting in the return statement this function was undefined so when you clicked the button it read "undefined" in the generator
 // once code  
-return "password will go here"
+return createdPassword
   
 }
 
