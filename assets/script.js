@@ -1,5 +1,21 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var numbers = [1,2,3,4,5,6,7,8,9,0];
+var symbols = ["!","@","#","$","&","*"];
+
+function generatePassword() {
+  console.log ("button was clicked");
+  
+  var passwordLength = prompt("Select password length (minimum: 8; maximum: 128)");
+
+// prior to putting in the return statement this function was undefined so when you clicked the button it read "undefined" in the generator
+// once code  
+return "password will go here"
+
+
+}
 
 // Write password to the #password input
 function writePassword() {
