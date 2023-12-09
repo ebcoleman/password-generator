@@ -8,8 +8,11 @@ With starter code, I will be writing code for JavaScript to make a functioning p
 ## Usage
 
 Screenshot:
+![Alt text](assets/images/password-generator-screenshot.jpg)
 
 Link:
+https://ebcoleman.github.io/password-generator/
+
 
 
 ## Credits
