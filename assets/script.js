@@ -23,14 +23,33 @@ function generatePassword() {
   var includeNumbers = confirm("Include numbers?");
   var includeSymbols = confirm("Include symbols?");
 
-  var createdPassword = 
+  
+  
+  var allCharacters = [];
+
+  if (includeUppercase) {
+    allCharacters = [...allCharacters, ...uppercase]
+  }
+  if (includeLowercase) {
+    allCharacters = [...allCharacters, ...lowercase]
+  }
+  if (includeNumbers) {
+    allCharacters = [...allCharacters, ...numbers]
+  }
+  if (includeSymbols) {
+    allCharacters= [...allCharacters, ...symbols]
+  }
+
+  // the for statement creates a loop 
+  var createdPassword = "";
   for (var i = 0; i < passwordLength; i++) {
-    
+    var randomIndex = Math.floor(Math.random() * allCharacters.length);
+    createdPassword += allCharacters[randomIndex];
   }
 
 // prior to putting in the return statement this function was undefined so when you clicked the button it read "undefined" in the generator
 // once code  
-return createdPassword
+  return createdPassword
   
 }
 
